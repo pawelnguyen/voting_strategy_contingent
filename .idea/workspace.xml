@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bdc2ada-14db-442f-a86f-2c95bccb3bd6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/voting_strategy_schulze/version.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/voting_strategy_schulze.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/voting_strategy_schulze.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="voting_strategy_schulze.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="voting_strategy_schulze.gemspec" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="voting_strategy_schulze.gemspec" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/voting_strategy_schulze.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="89" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38406828">
+            <state line="3" column="32" selection-start="124" selection-end="147" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,6 +108,7 @@
         <option value="$PROJECT_DIR$/lib/voting_strategy_schulze.rb" />
         <option value="$PROJECT_DIR$/lib/voting_strategy_schulze/version.rb" />
         <option value="$PROJECT_DIR$/voting_strategy_schulze.gemspec" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -408,7 +412,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/voting_strategy_schulze.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="89" selection-start="818" selection-end="818" vertical-scroll-proportion="0.38406828">
+        <state line="3" column="32" selection-start="124" selection-end="147" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
