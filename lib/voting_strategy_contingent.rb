@@ -1,16 +1,13 @@
 require 'voting_strategy_contingent/version'
-require 'voting_strategy_contingent/majority_check'
+require 'voting_strategy_contingent/votes_counter'
+require 'voting_strategy_contingent/strategies_parent'
+require 'voting_strategy_contingent/majority_check_strategy'
+require 'voting_strategy_contingent/second_count_strategy'
 
 module VotingStrategyContingent
   class Strategy
     def result(ballots, candidates)
-      @ballots = ballots
-      @candidates = candidates
-
-      majority_check_winner = MajorityCheck.new(@ballots).winner
-      return majority_check_winner unless majority_check_winner.nil?
-
-      ballots[0].votes.shuffle.map(&:candidate)
+      MajorityCheckStrategy.new(ballots).winner || SecondCountStrategy.new(ballots).winner
     end
   end
 end

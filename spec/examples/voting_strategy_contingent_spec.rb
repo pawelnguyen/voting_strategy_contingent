@@ -2,13 +2,13 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 include VotingStrategyContingent
 
-describe 'MajorityCheck' do
+describe 'VotingStrategyContingent' do
 
   Ballot = Struct.new(:votes)
   Vote = Struct.new(:candidate, :position)
 
   describe 'winner' do
-    subject { VotingStrategyContingent::MajorityCheck.new(ballots).winner }
+    subject { VotingStrategyContingent::Strategy.new.result(ballots, nil) }
 
     let(:ballots) {
       [Ballot.new(votes_1), Ballot.new(votes_2)]
@@ -38,13 +38,18 @@ describe 'MajorityCheck' do
         let(:ballots) {
           [Ballot.new(votes_1), Ballot.new(votes_2), Ballot.new(votes_3), Ballot.new(votes_4)]
         }
-        it { should be_nil }
+        it { should eq [candidate_1] }
+
+        context 'no candidate with majority' do
+          let(:votes_4) { [Vote.new(candidate_1, 4), Vote.new(candidate_2, 3), Vote.new(candidate_3, 1), Vote.new(candidate_4, 2)] }
+          it {should eq [candidate_1]}
+        end
       end
     end
 
     context 'no winning candidates' do
       let(:votes_2) { [Vote.new(candidate_1, 2), Vote.new(candidate_2, 1)] }
-      it { should be_nil }
+      it { should eq [candidate_1, candidate_2] }
     end
   end
 end
