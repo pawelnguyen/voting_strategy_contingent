@@ -2,12 +2,8 @@ require 'voting_strategy_schulze/version'
 
 module VotingStrategySchulze
   class Strategy
-    def initialize(ballots)
-      @ballots = ballots
-    end
-
-    def result
-      @ballots[0].shuffle.map(&:name)
+    def result(candidates, ballots)
+      ballots[0].votes.shuffle.map(&:candidate)
     end
   end
 end
